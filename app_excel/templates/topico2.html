@@ -1,0 +1,19 @@
+{% load static %}
+<! DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+    <h1 class="h1"> Bem Vindo ao Tópico 02 - Linha, Coluna e Célula</h1>
+    <div class="line"></div>
+</head>
+<body>
+    <p><b>CÉLULA: </b> uma célula são os quadradinhos formados pelo cruzamento de uma linha e uma coluna <br>
+    linha - representado pelos números<br>
+    coluna - representado pelas letras<br>
+    para eu selecionar uma coluna, linha ou célula basta clicar sobre a mesma</p>
+    <a href="{% url 'app_excel:index' %}">Voltar Para Página inicial</a>
+
+</body>
+</html>

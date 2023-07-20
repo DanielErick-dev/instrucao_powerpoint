@@ -1,0 +1,31 @@
+{% load static %}
+<! DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title> Aplicação De Instrução Excel</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+</head>
+
+<body>
+    <h1 class="h1"> Bem Vindo a Pàgina Inicial De Instrução</h1>
+    <div class="line"></div>
+    <br>
+    <button class="es_bt" onclick="window.location.href='{% url 'app_excel:topico1' %}'">Ir Para Tópico 01</button>
+    <br>
+    <br>
+    <button class="es_bt" onclick="window.location.href='{% url 'app_excel:topico2' %}'">Ir Para Tópico 02</button>
+    <br>
+    <br>
+    <button class="es_bt" onclick="window.location.href='{% url 'app_excel:topico3' %}'">Ir Para Tópico 03</button>
+    <br>
+    <br>
+    <button class="es_bt" onclick="window.location.href='{% url 'app_excel:topico4' %}'">Ir Para Tópico 04</button>
+    <br>
+    <br>
+    <button class="es_bt" onclick="window.location.href='{% url 'app_excel:topico5' %}'">Ir Para Tópico 05</button>
+    <br>
+    <br>
+    <button class="es_bt" onclick="window.location.href='{% url 'app_excel:topico6' %}'">Ir Para Tópico 06</button>
+</body>
+</html>
