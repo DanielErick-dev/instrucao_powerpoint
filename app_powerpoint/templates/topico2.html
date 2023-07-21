@@ -1,16 +1,31 @@
 {% load static %}
 <! DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>Tópico 01</title>
+    <title>Tópico 02</title>
     <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
 </head>
 <body>
-    <h1 class="h1"> Bem Vindo ao Tópico 0 - </h1>
+    <h1 class="h1"> Bem Vindo ao Tópico 02 - Layout</h1>
     <div class="line"></div>
 <!--    &#8595;-->
-    <img src="{% static 'images/.png' %}" alt="" width="70%">
+    <p><b>ADICIONAR NOVO SLIDE:</b>para adicionarmos um novo slide clicamos em novo slide<br>
+    nesta opção temos uma outra opção de escolha do layout do slide, como ele virá inicialmente como podemos ver no conteúdo a baixo&#8595;</p>
+    <img src="{% static 'images/adicionando_slides.png' %}" alt="imagem de adição de slides" width="70%">
+    <br>
+    <p>como podemos vizualizar no meio do nosso slide, temos um primeiro bloquinho a esquerda como mostra a imagem a baixo:<br>
+    onde podemos inserir tabelas com um número de linhas e colunas&#8595;</p>
+    <img src="{% static 'images/inserir_tabela.png' %}" alt="imagem de inserimento de tabelas" width="10%">
+    <br>
+    <p>ao lado destas opções temos várias ferramentas de inserimento de gráficos, formas, tabelas<br>
+    basta clicarmos ou passarmos o mouse por cima e poderemos ver o que cada icone faz</p>
+
+    <p><b>CONFIGURAÇÃO DE LAYOUT:</b> mesmo após termos criado o slide e definido seu layout, podemos apertar na ferramenta layout perto da ferramenta "novo slide"<br>
+    e escolhermos o slide que queremos, por mais que a configuraçao do slide seja mudada, seu conteúdo permancerá ali sem ser excluido</p>
+    <p>além disso podemos também alterar tamanhos dos retangulos dentro do slide, escrever textos<br>
+    arrastar com o mouse melhorando um posicionamento, e fazer os ajustes pessoais do usuário</p>
+
     <a href="{% url 'app_powerpoint:index' %}">Voltar Para Página inicial</a>
 </body>
 </html>
