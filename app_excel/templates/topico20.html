@@ -1,0 +1,22 @@
+{% load static %}
+<! DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Tópico 20</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+</head>
+<body>
+    <h1 class="h1"> Bem Vindo ao Tópico 20 - Congelar Fórmulas</h1>
+    <div class="line"></div>
+    <p><b>CONGELAR FÓRMULAS:</b>&#8595;<br></p>
+    <img src="{% static 'images/congelar.png' %}" alt="congelamento de fórmulas" width="40%">
+    <p>em casos como esse da imagem acima, não podemos simplesmente colocar o preenchimento automático da função soma<br>
+    isso porque caso façamos isso a coluna resultados irá multiplicar o valor por 0 já que a lógica é ir preenchendo pra baixo seguindo uma direção lógica<br>
+    para evitarmos isso e deixarmos organizado podemos congelar o número multiplicador como é mostrado na imagem<br>
+    inserindo entre o h2 um $ ficando: h$2, gerando um resultado satisfatório assim&#8595;</p>
+    <img src="{% static 'images/formula_congel.png' %}" alt="congelamento de fórmulas" width="40%">
+    <br>
+    <br>
+    <a href="{% url 'app_excel:index' %}">Voltar Para Página inicial</a>
+

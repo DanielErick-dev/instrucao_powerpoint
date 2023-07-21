@@ -1,0 +1,17 @@
+{% load static %}
+<! DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Tópico 08</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+</head>
+<body>
+    <h1 class="h1"> Bem Vindo ao Tópico 08 - Primeira Planilha</h1>
+    <div class="line"></div>
+    <p>Podemos fazer uma tabela simples assim como o exemplo a baixo usando um conhecimento básico em Excel</p>
+    <img src="{% static 'images/tabela_nao_formatada.png' %}" alt="vizualize a Tabela do Excel" width="45%">
+    <br>
+    <a href="{% url 'app_excel:index' %}">Voltar Para Página inicial</a>
+</body>
+</html>

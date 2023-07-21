@@ -1,11 +1,29 @@
-<!DOCTYPE html>
+{% load static %}
+<! DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title></title>
-    <h1> Bem vindo</h1>
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
 </head>
 <body>
-
+    <h1 class="h1"> Bem Vindo ao Tópico 05 - Textos e Números</h1>
+    <div class="line"></div>
+    <p> quando digitamos um texto em uma célula, naturalmente ele ficará alinhado a esquerda<br>
+    para mudarmos o alinhamento para a direita mechemos na opção alinhamento dentro da guia iniciar como mostra a imagem a baixo&#8595;</p>
+    <img src="{% static 'images/alinhamento.png' %}" alt="vizualize o alinhamento" width="10%">
+    <p> enquanto o alinhamento original do número é para a direita, que podemos alterar da mesma forma do texto</p>
+    <p> <b>FORMATO NÚMERO:</b>para deixarmos a formatação do número como moeda<br>
+    selecionamos a célula e apertamos na função mostrada na imagem a baixo&#8595;</p>
+    <img src="{% static 'images/moeda.png' %}" alt="vizualize o formato moeda" width="10%">
+    <p> <b>POSSIVEL ERRO:</b>um erro possivel é quando colocamos uma formatação de moeda e aparece vários ####<br>
+    para corrigirmos isso, precisamos aumentar o tamanho da célula através da linha<br>
+    dessa forma podemos personalizar com formato de moeda toda uma coluna inteira clicando na letra da coluna e na opção moeda
+    </p>
+    <p><b>PORCENTAGEM:</b> outro formato opcional é a formatação como porcentagem<br>
+    para isso, precisamos clicar na célula, linha ou coluna desejada, clicar na porcentagem(ao lado da moeda) e só depois escrever o valor</p>
+    <p><b>SEPARADOR DE MILHAR:</b>ao lado do simbolo da porcentagem temos a opção "separador de milhar" para números que sao muito grandes, facilitando vizualização<br>
+    sobre os .00 ao final do número podemos retirar ou adicionar clicando no simbolo ao lado do separador de milhar como mostra a imagem acima</p>
+    <a href="{% url 'app_excel:index' %}">Voltar Para Página inicial</a>
 </body>
 </html>

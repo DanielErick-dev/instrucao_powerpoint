@@ -1,0 +1,26 @@
+{% load static %}
+<! DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Tópico 19</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+</head>
+<body>
+    <h1 class="h1"> Bem Vindo ao Tópico 19 - Filtrar E Classificar</h1>
+    <div class="line"></div>
+    <p><b>FILTRAGEM E CLASSIFICAÇÃO:</b>quando temos uma tabela com dados, podemos deixá-los em ordem alfabética da seguinte maneira&#8595;<br></p>
+    <img src="{% static 'images/filtrar.png' %}" alt="" width="40%">
+    <p>como a imagem mostra acima, selecionamos a tabela com o mouse<br>
+    clicamos na guia dados<br>
+    apertamos em classificar<br>
+    e depois definimos qual campo da tabela faremos a ordem alfabética, através do nome, código, endereço ou outra escolha do usuário</p>
+    <p> uma outra forma mais prática do Excel é a utilização do item filtro ao lado do item classificar, fazemos assim:<br>
+    selecionamos toda a tabela e apertamos em filtro<br>
+    após isso os campos da tabela terão um pequeno traço ao lado onde podemos separadamente definirmos a ordem alfabética sem precisar definir apenas um pela classificação<br>
+    ficando dessa forma&#8595;</p>
+    <img src="{% static 'images/filtro.png' %}" alt="" width="50%">
+    <p>caso tenhamos um valor nessa tabela que queremos encontrar sem procurar, vamos no campo nome<br>
+    e dentro da barra de pesquisa escrevemos o nome desejado e damos enter, assim mostrará o nome desejado de forma mais rápida utilizando o filtro</p>
+    <br>
+    <a href="{% url 'app_excel:index' %}">Voltar Para Página inicial</a>

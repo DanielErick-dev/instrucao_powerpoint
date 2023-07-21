@@ -1,0 +1,20 @@
+{% load static %}
+<! DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Tópico 14</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+</head>
+<body>
+    <h1 class="h1"> Bem Vindo ao Tópico 14 - Função Máximo e Mínimo</h1>
+    <div class="line"></div>
+    <p><b>FUNÇÃO MÁXIMO:</b> para utilizarmos a função máximo será feita da mesma maneira da função soma<br>
+    iniciaremos com o "=" depois a função máximo com acento e letra maiúscula<br>
+    depois arrastamos com os valores ou utilizando o ponto e virgula(;) e obteremos o maior valor dentro do intervalo de números<br>
+    exemplo a baixo&#8595;</p>
+    <img src="{% static 'images/maximo.png' %}" alt="funcao maximo" width="10%">
+    <p> para obtermos o menor valor entre um intervalo, apenas trocaremos o MÁXIMO por MÍNIMO como mostra a imagem&#8595;</p>
+    <img src="{% static 'images/minimo.png' %}" alt="funçao minimo" width="10%">
+    <br>
+    <a href="{% url 'app_excel:index' %}">Voltar Para Página inicial</a>

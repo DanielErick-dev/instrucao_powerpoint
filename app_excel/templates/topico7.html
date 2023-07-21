@@ -1,0 +1,22 @@
+{% load static %}
+<! DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Tópico 07</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+</head>
+<body>
+    <h1 class="h1"> Bem Vindo ao Tópico 07 - Comentários</h1>
+    <div class="line"></div>
+
+    <p><b>ADICIONAR COMENTÁRIO:</b>para adicionarmos um comentário:<br>
+    primeiro clicamos na célula com o botão direito que irá abrir a imagem a baixo&#8595;</p>
+    <img src="{% static 'images/comentario.png' %}" alt="vizualize os icones comentários do Excel" width="20%">
+    <p>ao clicar no inserir comentário, escrevemos o comentário e sempre que passarmos o mouse pela célula mostrará o texto</p>
+    <img src="{% static 'images/comentario_telefone.png' %}" alt="vizualize o telefone do Excel" width="20%">
+    <br>
+    <a href="{% url 'app_excel:index' %}">Voltar Para Página inicial</a>
+
+</body>
+</html>

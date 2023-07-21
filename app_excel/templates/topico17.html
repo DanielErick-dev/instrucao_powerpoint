@@ -1,0 +1,19 @@
+{% load static %}
+<! DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Tópico 17</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+</head>
+<body>
+    <h1 class="h1"> Bem Vindo ao Tópico 17 - Mover ou Copiar</h1>
+    <div class="line"></div>
+    <p><b>Mover Ou Copiar:</b> quando queremos copiar uma tabela inteira e passar pra outra planilha sem alterar seus tamanhos<br>
+        podemos clicar na planilha que contém a tabela com o botão direito sobre, ir em mover ou copiar<br>
+        posteriormente colocamos para "mover para o final" e selecionamos a opçao no canto inferior da tela escrito "criar uma cópia"<br>
+        dessa forma podemos replicar uma planilha em outra planilha, imagem a baixo&#8595;<br></p>
+    <img src="{% static 'images/copiando_planilha.png' %}" alt="" width="20%">
+    <br>
+    <br>
+    <a href="{% url 'app_excel:index' %}">Voltar Para Página inicial</a>

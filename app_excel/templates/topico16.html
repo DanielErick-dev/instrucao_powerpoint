@@ -1,0 +1,18 @@
+{% load static %}
+<! DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Tópico 16</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+</head>
+<body>
+    <h1 class="h1"> Bem Vindo ao Tópico 16 - Pincel De Formatação</h1>
+    <div class="line"></div>
+    <p><b>PINCEL DE FORMATAÇÃO:</b>quando temos uma tabela/célula personalizada e queremos passar essa personalização pra outra célula fazemos o seguinte&#8595;<br></p>
+    <img src="{% static 'images/pincel_formatacao.png' %}" alt="pincel de formatação" width="40%">
+    <p>conforme vizualizamos no canto superior esquerdo um pincel, utilizaremos ele, o pincel de formatação<br>
+    para isso, clicamos na célula personalizada, depois clicamos no pincel e clicamos na célula destino que será personalizada<br>
+    assim passando a personalização de uma para outra sem ser necessário uma repetição manual, ajudando na proatividade no proceso</p>
+    <br>
+    <a href="{% url 'app_excel:index' %}">Voltar Para Página inicial</a>

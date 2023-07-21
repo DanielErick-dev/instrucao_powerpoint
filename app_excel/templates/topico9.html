@@ -1,0 +1,37 @@
+{% load static %}
+<! DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Tópico 09</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+</head>
+<body>
+    <h1 class="h1"> Bem Vindo ao Tópico 09 - Formatação</h1>
+    <div class="line"></div>
+    <p> quando lembramos da tabela do tópico anterior(tópico 07) podemos formatalo para deixálo assim&#8595;</p>
+    <img src="{% static 'images/tabela_formatada.png' %}" alt="vizualize a Tabela Formatada" width="45%">
+    <br>
+    <br>
+    <p><b>CONFIGURAÇÃO DO TITULO:</b>Primeiro pegamos o titulo e arrastamos até a coluna do texto endereço e apertamos na opção mesclar e centralizar<br>
+    aumentamos o tamanho da linha arrastando, depois dentro da aba alinhamento dentro da guia iniciar, apertamos no centralizar ao meio<br>
+    escolhemos uma fonte desejada, colocamos um tamanho desejado, e no potinho de tinta escolhemos a cor desejada<br>
+    </p>
+
+
+    <p><b>CONFIGURAÇÃO DA SEGUNDA LINHA DA TABELA:</b>primeiro aumentamos o tamanho da linha, corrigimos os tamanhos<br>
+    depois colocamos a mesma personalização que o titulo deixando "igual"
+    </p>
+
+    <p><b>CONFIGURAÇÃO DA TABELA:</b>selecionamos toda a tabela com o mouse e apertamos na opção a baixo no guia iniciar&#8595;
+    <br>
+    <br>
+    <img src="{% static 'images/borda.png' %}" alt="vizualize a Borda" width="5%">
+    <br>
+    <br>
+    <p> com esta opção poderemos criar uma borda ao redor de toda a tabela</p>
+    <a href="{% url 'app_excel:index' %}">Voltar Para Página inicial</a>
+</body>
+</html>
+
+<!--mesclagem do titulo-->

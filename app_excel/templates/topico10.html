@@ -1,0 +1,26 @@
+{% load static %}
+<! DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Tópico 10</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+</head>
+<body>
+    <h1 class="h1"> Bem Vindo ao Tópico 10 - Impressão de tabela</h1>
+    <div class="line"></div>
+    <p><b>PREPARAÇÃO PARA IMPRESSÃO DE TABELA EXCEL:</b> primeiro como mostra a imagem a baixo, vamos em layout da página/margens&#8595;<br></p>
+    <img src="{% static 'images/layout_pagina.png' %}" alt="" width="40%">
+    <br>
+    <br>
+    <p>após isso selecionamos a margem estreita para aparecer toda a tabela dentro da página de impressão</p>
+    <p>naturalmente a imagem irá vir em pé(imagem formato retrato)<br>
+    caso queiramos deitada clicamos em orientação ao lado da margem e selecionamos paisagem<br>
+    além dessas opções podemos personalizar nossa margem clicando em configurar margens personalizadas dentro da opção margem<br>
+    dentro dessa personalização temos a opção centralizar verticalmente/horizontalmente melhorando estética da tabela na página de impressão</p>
+    <p><b>FINALIZAÇÃO DA IMPRESSÃO DA TABELA:</b>clicamos na guia arquivo e selecionamos a opção imprimir
+    </p>
+
+    <a href="{% url 'app_excel:index' %}">Voltar Para Página inicial</a>
+</body>
+</html>

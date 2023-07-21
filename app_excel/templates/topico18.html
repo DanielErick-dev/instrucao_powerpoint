@@ -1,0 +1,18 @@
+{% load static %}
+<! DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Tópico 18</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+</head>
+<body>
+    <h1 class="h1"> Bem Vindo ao Tópico 18 - Preenchimento Automático</h1>
+    <div class="line"></div>
+    <p><b>PREENCHIMENTO AUTOMÁTICO:</b>um outro auxiliar do excel é a lógica de preenchimento automático<br>
+    que nos fornece a opção de digitar determinado valor e o Excel terminar de preencher<br>
+    como por exemplo escrevemos um número 1 na celula e na de baixo escrevemos 2, se no cantinho da célula<br>
+    arrastarmos para baixo, ele fará um preenchimento seguindo a lógica, preenchendo até a célula desejada a sequência de número<br>
+    o mesmo vale para dias da semanas, números, datas,fórmulas, anos etc..</p>
+    <br>
+    <a href="{% url 'app_excel:index' %}">Voltar Para Página inicial</a>
