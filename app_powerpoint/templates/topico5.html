@@ -1,0 +1,16 @@
+{{% load static %}
+<! DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tópico 01</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+</head>
+<body>
+    <h1 class="h1"> Bem Vindo ao Tópico 0 - </h1>
+    <div class="line"></div>
+<!--    &#8595;-->
+    <img src="{% static 'images/.png' %}" alt="" width="70%">
+    <a href="{% url 'app_powerpoint:index' %}">Voltar Para Página inicial</a>
+</body>
+</html>

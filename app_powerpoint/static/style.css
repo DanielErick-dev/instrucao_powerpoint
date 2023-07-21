@@ -1,0 +1,43 @@
+.header{
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.header img{
+    position: absolute; /* Define posicionamento absoluto */
+    top: 0; /* Alinha o ícone ao topo do container */
+    left: 20px; /* Alinha o ícone à esquerda do container */
+    margin: 2px; /* Espaçamento entre o ícone e o conteúdo */
+    width: 80px;
+
+}
+.es_bt {
+    background-color: rgba(218,165,32, 0.5);
+    padding: 5px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 25px;
+    border: 2px solid black;
+}
+.es_bt:hover{
+    background: rgb(192, 192, 192);
+
+}
+
+a {
+    text_decoration: none;
+}
+
+.h1{
+    margin-left: 350px;
+}
+
+.line{
+    border-bottom: 2px solid #008080;
+    margin: 0 auto;
+    width: 60%;
+
+}
+
+
