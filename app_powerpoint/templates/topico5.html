@@ -3,14 +3,30 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Tópico 01</title>
+    <title>Tópico 05</title>
     <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
 </head>
 <body>
-    <h1 class="h1"> Bem Vindo ao Tópico 0 - </h1>
+    <h1 class="h1"> Bem Vindo ao Tópico 05 - Tabela Segunda Parte</h1>
     <div class="line"></div>
 <!--    &#8595;-->
-    <img src="{% static 'images/.png' %}" alt="" width="70%">
+    <p>no tópico passado foi abordado brevemente sobre o design<br>
+    nesse tópico, será um resumo sobre o layout<br>
+    que corresponde a imagem a baixo&#8595;</p>
+    <img src="{% static 'images/layout_tabela.png' %}" alt="layout da tabela" width="70%">
+    <p>caso queiramos adicionar uma nova linha clicamos na linha da tabela onde será adicionada a nova<br>
+    e posteriormente apertamos em inserir abaixo como mostra a imagem abaixo&#8595;</p>
+    <img src="{% static 'images/inserir_abaixo.png' %}" alt="inserir linha de tabela" width="10%">
+    <p>assim como no Excel, podemos fazer a mesclagem de células<br>
+    pra isso selecionamos as células pra mesclagem, e apertamos na opção mesclar células&#8595;</p>
+    <img src="{% static 'images/mesclar_celulas.png' %}" alt="mesclar células" width="9%">
+    <p>ao lado do mesclar células temos a opção dividir células onde podemos pegar um bloco e fazer sub-blocos<br>
+    lembrando que cada personalização vai depender da necessidade do usuário</p>
+    <hr>
+    <p>outra personalização diferente e interessante é que com a opção direção do texto<br>
+    podemos girar o nosso texto em determinados graus, opção mostrada abaixo&#8595;</p>
+    <img src="{% static 'images/direcao_texto.png' %}" alt="ferramenta de giro da direção do texto" width="9%">
+    <br>
     <a href="{% url 'app_powerpoint:index' %}">Voltar Para Página inicial</a>
 </body>
 </html>

@@ -1,6 +1,6 @@
 {% load static %}
 <! DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <title>Tópico 03</title>
@@ -10,7 +10,15 @@
     <h1 class="h1"> Bem Vindo ao Tópico 03 - Design</h1>
     <div class="line"></div>
 <!--    &#8595;-->
-    <img src="{% static 'images/.png' %}" alt="" width="70%">
+    <p>nesta breve descrição falaremos agora dos designs que podemos incrementar nos nossos slides<br>
+    como mostra a tela a baixo, temos essa opção de temas pré prontos feitos pelo próprio powerpoint</p>
+    <img src="{% static 'images/tela_inicial_design.png' %}" alt="tela inicial de design" width="70%">
+
+    <p>ao lado do guia temas tem o guia variante onde podemos mudar levemente o estilo do nosso design escolhido anteriormente</p>
+    <p>ainda dentro da guia design temos a opção de configuração de tamanho do slide no canto superior direito, como mostra a imagem a baixo&#8595;</p>
+    <img src="{% static 'images/tamanho_slide.png' %}" alt="opção de aumentar tamanho do slide" width="10%">
+
+    <br>
     <a href="{% url 'app_powerpoint:index' %}">Voltar Para Página inicial</a>
 </body>
 </html>

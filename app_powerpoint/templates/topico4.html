@@ -3,14 +3,34 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Tópico 01</title>
+    <title>Tópico 04</title>
     <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
 </head>
 <body>
-    <h1 class="h1"> Bem Vindo ao Tópico 0 - </h1>
+    <h1 class="h1"> Bem Vindo ao Tópico 04 - Tabelas</h1>
     <div class="line"></div>
 <!--    &#8595;-->
-    <img src="{% static 'images/.png' %}" alt="" width="70%">
+    <p>sobre inserção de tabelas, é extremamente simples criarmos uma, ao adicionar um novo slide temos 8 ferramentas dentro de cada um<br>
+    o primeiro item a esquerda é o inseridor de tabelas conforme mostra a imagem a baixo, definimos linhas e colunas e pronto&#8595;</p>
+    <img src="{% static 'images/tabelas.png' %}" alt="inserção de tabela" width="40%">
+    <p>ao estarmos com o mouse sobre a tabela, o powerpoint nos fornece duas novas guias (layout e design)<br>
+    cujas guias são de personalização da tabela criada e não dos slides</p>
+    <p>com a tabela já criada, podemos inserir dados nela<br>
+        e personalizar escolhendo um estilo de tabela que melhor se adeque ao modelo do usuário</p>
+
+    <img src="{% static 'images/estilizacao_tabela.png' %}" alt="estilizacao de tabela" width="20%">
+
+
+    <p>dentro dessas opções temos as estilizações manuais da nossa tabela criada<br>
+    a personalização também vai de acordo com a necessidade do usuário</p>
+    <hr>
+
+    <img src="{% static 'images/pintar_com_imagem.png' %}" alt="estilizacao de tabela" width="20%">
+
+    <p>outra forma de preenchimento é como mostra a imagem a cima<br>
+    onde apertamos em imagem e selecionamos uma imagem nossa<br>
+    com isso podemos pegar uma imagem e fazer de fundo de preenchimento<br>
+    algo especifico do powerpoint e bem inovador</p>
     <a href="{% url 'app_powerpoint:index' %}">Voltar Para Página inicial</a>
 </body>
 </html>
