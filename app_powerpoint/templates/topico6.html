@@ -1,16 +1,45 @@
 {% load static %}
 <! DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>Tópico 01</title>
+    <title>Tópico 06</title>
     <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
 </head>
 <body>
-    <h1 class="h1"> Bem Vindo ao Tópico 0 - </h1>
+    <h1 class="h1"> Bem Vindo ao Tópico 06 - Trabalhando com imagens</h1>
     <div class="line"></div>
 <!--    &#8595;-->
-    <img src="{% static 'images/.png' %}" alt="" width="70%">
+    <p>assim que criamos um novo slide que já foi ensinado nos tópicos anteriormente<br>
+    temos a opção de inserção de imagens que também já foi falado<br>
+    ao colocarmos uma imagem, automaticamente a imagem se redimensionará ao tamanho do meu slide<br>
+    tendo inserido a imagem o powerpoint nos oferece uma guia de formatação especifica como mostra a tela a baixo&#8595;</p>
+    <br>
+    <img src="{% static 'images/formatacoes_imagens.png' %}" alt="opção de formatação de imagem na guia" width="70%">
+    <p>como podemos ver temos diversas ferramentas de personalização<br>
+    no entanto uma delas se torna meio fútil, a de largura e altura na aba "tamanho"<br>
+    e o motivo é simples, é muito mais simples a utilização do mouse para regulação do tamanho da imagem</p>
+    <hr>
+    <p>uma configuração útil é o recorte de imagem como mostra a imagem a baixo<br>
+    com ele caso tenhamos uma imagem com ocupações fúteis, podemos retira-las com essa ferramenta chamada cortar&#8595;</p>
+    <img src="{% static 'images/opcao_cortar.png' %}" alt="opção de recorte de imagem" width="15%">
+    <hr>
+    <p>outra opção é a remoção de plano de fundo, bastando clicar no icone como mostra a imagem a baixo&#8595;</p>
+    <img src="{% static 'images/remover_plano_de_fundo.png' %}" alt="opção de remoção de fundo" width="10%">
+    <p>ao apertar nela será mostrado essas outras opções a baixo&#8595;</p>
+    <img src="{% static 'images/remover_plano_de_fundo_parte2.png' %}" alt="segunda parte da opção de remoção de fundo" width="15%">
+    <p>com ela podemos selecionar manualmente o que queremos apagar e o que queremos manter do nosso plano de fundo<br>
+    a depender da necessidade do usuário</p>
+    <p>ao lado da opção remover plano de fundo temos uma opção chamada "correções" com um simbolo representativo do sol<br>
+    com ele podemos mudar a quantidade de luz/pequenas mudanças de cores na imagem<br>
+    caso seja necessário mudar a cor da imagem, vamos na ferramenta cor ao lado</p>
+    <hr>
+    <img src="{% static 'images/substituicao_de_imagem.png' %}" alt="ferramenta de substituição de imagem" width="5%">
+    <p>com esta opção da imagem acima(ao lado do cor e efeitos artisticos), podemos substituir uma imagem por outra sem ser necessário configurar dimensões<br>
+    podemos colocar alem de imagens, icones entre outros</p>
+    <hr>
+    <p>ao lado do substituidor de imagens temos opções de estilos pré-existentes pra melhorar o design da imagem</p>
+
     <a href="{% url 'app_powerpoint:index' %}">Voltar Para Página inicial</a>
 </body>
 </html>

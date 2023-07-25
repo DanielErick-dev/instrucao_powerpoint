@@ -1,16 +1,50 @@
 {% load static %}
 <! DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>Tópico 01</title>
+    <title>Tópico 08</title>
     <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
 </head>
 <body>
-    <h1 class="h1"> Bem Vindo ao Tópico 0 - </h1>
+    <h1 class="h1"> Bem Vindo ao Tópico 08 - Conhecendo Personalizações dos Gráficos</h1>
     <div class="line"></div>
 <!--    &#8595;-->
-    <img src="{% static 'images/.png' %}" alt="" width="70%">
+    <p>quando apertamos nos gráficos já criados anteriormente nos tópicos passados<br>
+    o powerpoint nos fornece estas duas guias a baixo&#8595;</p>
+    <img src="{% static 'images/design_graficos.png' %}" alt="guia de design dos gráficos" width="70%">
+    <p>a guia design e guia de formatação, guia de design acima e guia de formatação a baixo&#8595;</p>
+    <img src="{% static 'images/guia_formatacao.png' %}" alt="guia de formatação dos gráficos" width="70%">
+    <hr>
+    <p>temos a opção dentro da guia design dos gráficos a opção de adição de elementos do gráfico</p>
+    <img src="{% static 'images/adicionar_elemento_de_grafico.png' %}" alt="opção de adição de elementos dos gráficos" width="50%">
+    <p>seguindo o passo a passo como a imagem mostra, essa é uma opção onde colocamos informações mais evidentes no nosso gráfico criado<br>
+    onde mostramos os salários especificos de cada cargo criado em nossa tabela mini-Excel</p>
+    <hr>
+    <p>outra opção é também a escolha de um layout rápido pré pronto como mostra a imagem a baixo&#8595;</p>
+    <img src="{% static 'images/layout_rapido.png' %}" alt="opção de escolha de layout rápido" width="40%">
+    <p>ao lado da opção de layout rápido temos a opção de paleta de cores para melhor personalização do gráfico</p>
+    <p>a aba estilo onde mostra todos os estilos pré prontos do design de gráficos(consultar imagem no topo do tópico)<br>
+    quando mudamos alguma personalização, ele já altera os estilos pré prontos para atender a sua personalização feita<br>
+    além de adicionar mais designs possiveis baseados na sua escolha</p>
+    <hr>
+    <img src="{% static 'images/opcao_selecionar_dados.png' %}" alt="abrindo mini-Excel" width="40%">
+    <p>esta função de selecionar dados abre o mesmo Mini-Excel já apresentado neste tópico junto com minha fonte de dados na imagem ao lado</p>
+    <p>na opção ao lado chamada "editar dados" abrirá novamente o Mini-Excel para podermos fazer alterações no Excel e renderizar no gráfico automaticamente</p>
+    <img src="{% static 'images/editar_dados.png' %}" alt="abrindo mini-Excel" width="10%">
+    <p>na outra opção ao lado no canto superior direito temos a opção de mudar o tipo de gráfico<br>
+    basicamente como o nome da ferramenta diz, apenas mudaremos o tipo de gráfico a depender da necessidade do usuário</p>
+    <hr>
+    <hr>
+    <p><b>GUIA FORMATAR:</b>dentro da guia formatar mexeremos principalmente na parte visual do gráfico, na estilização<br>
+    </p>
+    <img src="{% static 'images/estilizacoes_grafico.png' %}" alt="3 opções de estilizações dos gráficos" width="15%">
+    <p>as 3 opções acima servem basicamente para colocar um preenchimento com cor no gráfico<br>
+    adicionar um contorno<br>
+    e adicionar um estilo único</p>
+    <p>se quisermos personalizar algo especifico do gráfico fazemos:<br>
+    clicamos no assunto especifico do gráfico<br>
+    vamos na personalização e aplicamos individualmente</p>
     <a href="{% url 'app_powerpoint:index' %}">Voltar Para Página inicial</a>
 </body>
 </html>

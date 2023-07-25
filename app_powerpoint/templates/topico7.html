@@ -1,16 +1,24 @@
 {% load static %}
 <! DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>Tópico 01</title>
+    <title>Tópico 07</title>
     <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
 </head>
 <body>
-    <h1 class="h1"> Bem Vindo ao Tópico 0 - </h1>
+    <h1 class="h1"> Bem Vindo ao Tópico 07 - Falando sobre Gráficos</h1>
     <div class="line"></div>
 <!--    &#8595;-->
-    <img src="{% static 'images/.png' %}" alt="" width="70%">
+    <p>assim que adicionamos um novo slide, assim como aparece opção de imagem, tabelas, temos a opção de inserção de gráficos também<br>
+    ao apertar em inserir gráficos será direcionado para a página a baixo&#8595;</p>
+    <img src="{% static 'images/tela_inicial_grafico.png' %}" alt="tela inicial da inserção de gráfico" width="40%">
+    <p>- ao inserirmos um gráfico, uma mini tela em Excel será criada dentro do powerpoint<br>
+    - lembrando que para cada tipo de dado, é mais recomendado um tipo de gráfico<br>
+    - quando o assunto é aumento salarial, os gráficos de linha ou colunas podem ser uma boa opção</p>
+    <hr>
+    <img src="{% static 'images/grafico_inserido.png' %}" alt="gráfico criado" width="40%">
+    <p>conseguimos vizualizar que ao modificarmos os valores no mini-excel a representação gráfica já muda automaticamente</p>
     <a href="{% url 'app_powerpoint:index' %}">Voltar Para Página inicial</a>
 </body>
 </html>
